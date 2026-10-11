@@ -1,121 +1,14 @@
-<style>
-  .readme-root { color: #1c1914; }
-  .mast {
-    background: #10241c;
-    color: #f6f1e7;
-    border: 3px solid #0b1814;
-    border-radius: 1rem;
-    padding: 1.4rem 1.6rem 1.5rem;
-    margin: 0 0 1.4rem;
-    box-shadow: 0 8px 0 #0b1814;
-  }
-  .eyebrow {
-    margin: 0;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    font-size: 0.72rem;
-    color: #e6c14a;
-    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-  }
-  .mast h1 {
-    margin: 0.15rem 0 0.35rem;
-    font-family: Georgia, "Palatino Linotype", serif;
-    font-size: 2.6rem;
-    color: #f3e6c4;
-    text-shadow: 0 2px 0 #3a2a12;
-    border: 0;
-    background: transparent;
-  }
-  .tagline {
-    margin: 0;
-    color: #d7c7a2;
-    font-family: Georgia, "Palatino Linotype", serif;
-    font-size: 1.05rem;
-  }
-  .cast {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-    margin: 1.1rem 0 0.2rem;
-  }
-  .cast figure {
-    flex: 1 1 6.2rem;
-    max-width: 8rem;
-    margin: 0;
-    background: #8d2d32;
-    color: #f6f1e7;
-    border: 2px solid #1c1914;
-    border-radius: 0.65rem 0.65rem 0.4rem 0.4rem;
-    padding: 0.35rem 0.35rem 0.45rem;
-    text-align: center;
-    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.28);
-  }
-  .cast img {
-    width: 100%;
-    height: 6.2rem;
-    object-fit: contain;
-    background: #f4efe4;
-    border: 2px solid #1c1914;
-    border-radius: 0.35rem;
-  }
-  .cast figcaption {
-    margin-top: 0.35rem;
-    background: #e6c14a;
-    color: #1c1914;
-    border: 2px solid #1c1914;
-    border-radius: 0.3rem;
-    font-size: 0.68rem;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-  }
-  .panel {
-    background: #e7d3a1;
-    color: #1c1914;
-    border: 4px solid #6b4a28;
-    border-radius: 0.35rem;
-    padding: 0.9rem 1.1rem;
-    margin: 1rem 0 1.4rem;
-    box-shadow: 0 10px 0 #6b4a28;
-    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
-  }
-  .panel strong { color: #10241c; }
-</style>
+# Table Topics
 
-<div class="mast">
-  <p class="eyebrow">Local club</p>
-  <h1>Table Topics</h1>
-  <p class="tagline">Five seats. One speech. A sheet on the podium.</p>
-  <div class="cast">
-    <figure>
-      <img src="app/media/timer/tm_img_cropped.jpg" alt="Timer">
-      <figcaption>Timer</figcaption>
-    </figure>
-    <figure>
-      <img src="app/media/grammarian/tm_img_cropped.jpg" alt="Grammarian">
-      <figcaption>Grammarian</figcaption>
-    </figure>
-    <figure>
-      <img src="app/media/ah-counter/tm_img_cropped.jpg" alt="Ah-Counter">
-      <figcaption>Ah-Counter</figcaption>
-    </figure>
-    <figure>
-      <img src="app/media/reviewer/tm_img_cropped.jpg" alt="Reviewer">
-      <figcaption>Reviewer</figcaption>
-    </figure>
-    <figure>
-      <img src="app/media/evaluator/tm_img_cropped.jpg" alt="Evaluator">
-      <figcaption>Evaluator</figcaption>
-    </figure>
-  </div>
-</div>
+**Local club.** Five seats. One speech. A sheet on the podium.
+
+| Timer | Grammarian | Ah-Counter | Reviewer | Evaluator |
+| :---: | :---: | :---: | :---: | :---: |
+| <img src="app/media/timer/tm_img_cropped.jpg" alt="Timer" width="96"> | <img src="app/media/grammarian/tm_img_cropped.jpg" alt="Grammarian" width="96"> | <img src="app/media/ah-counter/tm_img_cropped.jpg" alt="Ah-Counter" width="96"> | <img src="app/media/reviewer/tm_img_cropped.jpg" alt="Reviewer" width="96"> | <img src="app/media/evaluator/tm_img_cropped.jpg" alt="Evaluator" width="96"> |
 
 A browser club for Toastmasters table topics. Draw a topic, record a speech or paste one, and the five seats take their turn. Timer and Ah-Counter count on their own. Grammarian, Reviewer, and Evaluator each make one call to a model running on your machine through Microsoft Foundry Local. Whisper, the model, and the audio stay local.
 
-<div class="panel">
-  <strong>The room.</strong> A green hall, red seats, brass nameplates, and a wooden podium. Each portrait leans in while that seat is working, then the note appears under the nameplate. The evaluation sheet slides in from the side.
-</div>
+> **The room.** A green hall, red seats, brass nameplates, and a wooden podium. Each portrait leans in while that seat is working, then the note appears under the nameplate. The evaluation sheet slides in from the side.
 
 ## How a round works
 
