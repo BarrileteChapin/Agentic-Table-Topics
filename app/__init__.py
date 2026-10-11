@@ -1,0 +1,1 @@
+"""Local Toastmasters speech club."""

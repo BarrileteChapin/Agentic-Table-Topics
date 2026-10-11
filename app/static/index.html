@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Table Topics</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="mast">
+    <p class="eyebrow">Local club</p>
+    <h1>Table Topics</h1>
+    <label class="model-pick">
+      <span>Model</span>
+      <select id="model"></select>
+    </label>
+  </header>
+
+  <main>
+    <section class="stage" aria-label="Club room">
+      <div class="house">
+        <ol class="seats" id="seats">
+          <li data-agent="Timer">
+            <span class="role">Timer</span>
+            <img class="portrait" alt="" src="/media/timer/tm_img_cropped.jpg" data-rest="/media/timer/tm_img_cropped.jpg" data-active="/media/timer/tm_img2_cropped.jpg">
+            <p class="note">Waiting</p>
+            <span class="plate">Timer</span>
+          </li>
+          <li data-agent="Grammarian">
+            <span class="role">Grammarian</span>
+            <img class="portrait" alt="" src="/media/grammarian/tm_img_cropped.jpg" data-rest="/media/grammarian/tm_img_cropped.jpg" data-active="/media/grammarian/tm_img2_cropped.jpg">
+            <p class="note">Waiting</p>
+            <span class="plate">Grammarian</span>
+          </li>
+          <li data-agent="AhCounter">
+            <span class="role">Ah-Counter</span>
+            <img class="portrait" alt="" src="/media/ah-counter/tm_img_cropped.jpg" data-rest="/media/ah-counter/tm_img_cropped.jpg" data-active="/media/ah-counter/tm_img2_cropped.jpg">
+            <p class="note">Waiting</p>
+            <span class="plate">Ah-Counter</span>
+          </li>
+          <li data-agent="Reviewer">
+            <span class="role">Reviewer</span>
+            <img class="portrait" alt="" src="/media/reviewer/tm_img_cropped.jpg" data-rest="/media/reviewer/tm_img_cropped.jpg" data-active="/media/reviewer/tm_img2_cropped.jpg">
+            <p class="note">Waiting</p>
+            <span class="plate">Reviewer</span>
+          </li>
+          <li data-agent="Evaluator">
+            <span class="role">Evaluator</span>
+            <img class="portrait" alt="" src="/media/evaluator/tm_img_cropped.jpg" data-rest="/media/evaluator/tm_img_cropped.jpg" data-active="/media/evaluator/tm_img2_cropped.jpg">
+            <p class="note">Waiting</p>
+            <span class="plate">Evaluator</span>
+          </li>
+        </ol>
+      </div>
+
+      <section class="podium">
+        <div class="topic-row">
+          <label class="field">
+            <span>Topic</span>
+            <textarea id="topic" rows="2"></textarea>
+          </label>
+          <button type="button" id="new-topic">New topic</button>
+        </div>
+        <div class="podium-grid">
+          <div class="podium-controls">
+            <div class="time-row">
+              <label class="field minutes">
+                <span>Target minutes</span>
+                <input id="minutes" type="number" min="1" max="10" step="1" value="2">
+              </label>
+              <label class="field minutes">
+                <span>Spoken minutes</span>
+                <input id="spoken" type="number" min="0.1" max="20" step="0.1" value="2">
+              </label>
+            </div>
+            <p class="band" id="band"></p>
+            <div class="clock-row">
+              <p class="clock" id="clock">0:00</p>
+              <button type="button" id="evaluate-text">Evaluate text</button>
+              <button type="button" id="record">Record</button>
+              <button type="button" id="new-round">New round</button>
+              <button type="button" id="open-sheet" hidden>Evaluation</button>
+            </div>
+          </div>
+          <label class="field speech-field">
+            <span>Speech text</span>
+            <textarea id="speech" rows="8" placeholder="Paste a speech here to skip the microphone."></textarea>
+          </label>
+        </div>
+        <p class="status" id="status">Paste a speech, or record one.</p>
+        <p class="transcript" id="transcript" hidden></p>
+      </section>
+    </section>
+
+    <div class="sheet-backdrop" id="sheet-backdrop"></div>
+    <section class="sheet" id="sheet" aria-hidden="true">
+      <div class="sheet-head">
+        <h2>Evaluation</h2>
+        <div class="sheet-actions">
+          <button type="button" id="download">Download report</button>
+          <button type="button" id="close-sheet" aria-label="Close evaluation">Close</button>
+        </div>
+      </div>
+      <ol id="categories"></ol>
+      <dl class="closing" id="closing"></dl>
+    </section>
+    <p class="error" id="error" hidden></p>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+google-adk
+litellm>=1.84
+fastapi
+uvicorn
+python-multipart
+faster-whisper
